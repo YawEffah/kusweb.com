@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kuswebsystems.com</title>
+	<link rel="fa icon" type="short icon" href="Media/logo.png">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script type="text/javascript" src="Js/script.js"></script>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body>
+	<div id="container">
+		
+<!--Mobile header-->
+			<div class="mobile-header">
+				<span class="nav-menu">
+					<i class="fa fa-bars" onclick="opennav()" title="Menu"></i>
+					<a href="#"><img src="Media/logo.png" width="50px" class="logo"></a>
+				</span>
+				<span>
+					<a href="#" title="Call us on phone" class="action-btn">
+						<i class="fa fa-phone"></i> : 0243619089
+					</a>
+				</span>
+			</div>
+
+	<!--Mobile Nav-->
+			<nav id="Nav" class="mobile-nav" onclick="closelogin()">
+				<span class="close-btn" onclick="closenav()">&times;</span>
+				<ul>
+					<li><a href="#" onclick="closenav()" class="active">Home</a></li>
+					<li><a href="#about" onclick="closenav()">About</a></li>
+					<li><a href="#products" onclick="closenav()">Products</a></li>
+					<li><a href="#services" onclick="closenav()">Services</a></li>
+					<li><a href="#contact" onclick="closenav()">Contact</a></li>
+				</ul>
+			</nav>
+
+
+	<!--Desktop header-->
+		<div class="desktop-header">
+			<header>
+				<nav>
+					<span class="logo"><a href="#"><img src="Media/logo.png" width="50px"></a></span>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#products">Products</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="quick-links-wrapper">
+					<form class="search-wrapper" id="search-wrapper">
+						<input type="" name="search-form" placeholder="Search here..." class="search-form" id="search-form" onclick="opensearch()">
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+					</form>
+					<span class="action-btn-wrapper">
+						<a href="3" title="Call us on phone" class="action-btn">
+							<i class="fa fa-phone"></i> : 0243619089
+						</a>
+					</span>
+					
+				</div>
+			</header>
+		</div>
+
+		<span class="search-icon" onclick="openmsearch()" id="search-icon" title="Search"><i class="fa fa-search"></i></span>
+					<form class="mobile-search" id="m-search-form">
+						<input type="" name="search-form" placeholder="Search here..." class="search-form" >
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+					</form>
+
+
+		<div class="banner" onclick="closesearch(), closemsearch()">
+				<figure class="slider">
+					<div class="slide-images"><img src="Media/slide-img-1.jpg"></div>
+					<div class="slide-images"><img src="Media/slide-img-2.jpg"></div>
+					<div class="slide-images"><img src="Media/slide-img-3.jpg"></div>
+					<div class="slide-images"><img src="Media/slide-img-4.jpg"></div>
+					<div class="slide-images"><img src="Media/slide-img-1.jpg"></div>
+				</figure>
+		</div>
+
+		<section class="landing-page">
+			<div class="landing-page-content" onclick="closesearch(), closemsearch(), closenav()">
+				<h2>KUSWEB SYSTEMS</h2>
+				<h4><marquee>The Premium I.T Partner</marquee></h4>
+				<a href=""><h3>Stay Alert, Say No to Cybercrime</h3></a>
+				<img src="Media/screenshot.png">
+			</div>
+		</section>
+		
+
+		<main onclick="closesearch(), closemsearch(), closenav()" >
+			<section class="about" id="about">
+				<h2>Read to Know More About Us</h2>
+				<p>
+					Kusweb Limited is an information company located in Nkoranza in the Bono East region of Ghana. We are specialized in web programming, hardware and software. <br>
+					Kusweb Limited has been very successful in the Information technology industry in the country (Ghana) since it has been able to achieve its goal of having developed online-Voting platform, E-payroll system, Sales point system, Appraisal system, Banking App (Credit Union), Church management system, etc. 
+				</p>
+				<p>
+					The management and the staff of the Company is still working harder in order to contribute to the migration to the digital world in the country (Ghana) and in Africa at large. 
+
+				</p>
+
+				<a href=""><h5>How do we work?</h5></a>
+
+			</section>
+
+
+			<section class="main_products" id="products">
+				<h2 style="color: white;">Our Products</h2><br><br>
+				<div class="products-wrapper">
+
+					<a href="#">
+						<div class="product">
+							<article>
+								<h1 class="product-icon"><i class="fa fa-credit-card"></i></h1>
+								E-Payroll Management System
+							</article>
+						</div>
+					</a>
+
+					
+					<a href="#">
+						<div class="product">
+							<article>
+								<h1 class="product-icon"><i class="fa fa-check"></i></h1>
+								Appraisal System
+							</article>
+						</div>
+					</a>
+
+					<a href="l#">
+						<div class="product">
+							<article>
+								<h1 class="product-icon"><i class="fa fa-bank"></i></h1>
+								Church Finance Management System
+							</article>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="product">
+						<article>
+							<h1 class="product-icon"><i class="fa fa-bullhorn"></i></h1>
+							E-Voting System
+						</article>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="product">
+							<article>
+								<h1 class="product-icon"><i class="fa fa-users"></i></h1>
+								Mobile Credit Union
+							</article>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="product">
+							<article>
+								<h1 class="product-icon"><i class="fa fa-shopping-cart"></i></h1>
+								Point of Sale System
+							</article>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="product">
+							<article>
+								<h1 class="product-icon"><i class="fa fa-university"></i></h1>
+								Smart Exams
+							</article>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="product">
+							<article>
+								<h1 class="product-icon"><i class="fa fa-user"></i></h1>
+								Vending System
+							</article>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="product">
+						<article>
+							<h1 class="product-icon"><i class="fa fa-cogs"></i></h1>
+							Customized Web App
+						</article>
+						</div>
+					</a>
+
+				</div>
+			</section>
+
+
+			<section class="contact" id="contact">
+				<h2>We are here to help you</h2>
+				<h4>And we respond quickly</h4>
+				
+				<div class="contact-wrapper">
+					<span>
+					<p>
+						Need some assistance? Contact our support team via email, phone or chat. <br>We are here to help you build the website of your dreams.
+					</p>
+
+					<a href="contact.html"><h5>Contact us</h5></a>
+				</span>
+
+				<div class="team">
+					<img src="Media/team.png">
+				</div>
+				</div>
+			</section>
+
+
+			<section class="services" id="services">
+				<h2 style="color: white;">All you need to know about our services</h2>
+				
+				<div class="services-wrapper">
+					<div class="service">
+						<h2><i class="fa fa-code"></i></h2>
+						<h3 style="color: white; margin: 20px;">Software</h3>
+						<p>
+							We offer you with the best computer software services. We are expert in developing Apps for banks, schools other institutions.
+						</p>
+						<p>
+						
+						</p>
+					</div>
+
+					<div class="service">
+						<h2><i class="fa fa-microchip"></i></h2>
+						<h3 style="color: white; margin: 20px;">Hardware</h3>
+						<p>
+							We have experienced and compitent team who will assist you in any hardware challenges in your organization.
+						</p>
+						<p>
+							
+						</p>
+					</div>
+
+					<div class="service">
+						<h2><i class="fa fa-server"></i></h2>
+						<h3 style="color: white; margin: 20px;">Networking</h3>
+						<p>
+							We install, troubelshoot and configure computer network systems to suite the needs of your organization and personal needs.
+						</p>
+						<p>
+							
+						</p> 
+					</div>
+				</div>
+
+
+			</section>
+
+		</main>
+
+		<span class="scroll-top-icon" id="scrolltop" onclick="scrolltop()" title="Scroll Top">
+			<i class="fa fa-arrow-up"></i>
+		</span>
+
+			<div class="Contact-bar" onclick="closenav()">
+				<div class="C-bar-content">
+					<p><i class="fa fa-map-marker"> : Nkz-Bono East</i></p>
+					<p><i class="fa fa-envelope-o"> : kuswebsystems@gmail.com</i></p>
+					<p><i class="fa fa-phone"> : 0243619089 / 0245495617</i></p>
+				</div>
+				
+			</div>
+
+		<footer onclick="closenav()">
+			<div class="footer-content">
+				<p>&copy Kusweb Systems 2020. All Rights Reserved</p>
+				<hr>
+				<p>
+					<a href="" class="f-icon"><i class="fa fa-instagram"></i></a>
+					<a href="" class="f-icon"><i class="fa fa-facebook"></i></a>
+					<a href="" class="f-icon"><i class="fa fa-twitter"></i></a>
+					<a href="" class="f-icon"><i class="fa fa-whatsapp"></i></a>
+				</p>
+
+				<div class="sub-form">
+					<form>
+						<input type="email" placeholder="Get update in your e-mail" name="news-letter-form" class="news-letter-form">
+						<input type="submit" value="Subscribe Now!" name="news-letter-btn" class="news-letter-btn">
+					</form>
+				</div>
+			</div>
+		</footer>
+
+</div>
+
+<script type="text/javascript">
+	mybutton= document.getElementById("scrolltop");
+
+		function scrolltop() {
+			document.body.scrollTop= 0;
+		}
+
+		function scrolltop() {
+			document.documentElement.scrollTop= 0;
+		}
+</script>
+</body>
+</html>

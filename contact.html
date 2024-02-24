@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="fa icon" type="short icon" href="Media/logo.png">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script type="text/javascript" src="Js/script.js"></script>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>kuswebsystems.com</title>
+
+	<style type="text/css">
+		.main{
+			width: 100%;
+			margin: 0 auto;
+			padding: 100px  20px;
+		}
+
+		.main section{
+			margin: 20px 0;
+		}
+
+		.map-wrapper img{
+			width: 100%;
+			margin: 0 auto;
+			border-radius: 15px;
+		}
+
+		.map-wrapper img:hover{
+			opacity: 0.9;
+		}
+
+		.address-wrapper p{
+			margin: 5px 0;
+		}
+
+		.form-wrapper .text-box{
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			border: 1px solid #ccc;
+			border-radius: 7px;
+		}
+
+		.form-wrapper textarea{
+			width: 100%;
+			padding: 10px;
+			height: 150px;
+			border: 1px solid #ccc;
+			border-radius: 7px;
+		}
+
+		.form-wrapper .reset-btn{
+			background: darkred;
+		}
+
+		.form-wrapper .submit-btn{
+			background: #276cb4;
+		}
+
+		.form-wrapper .submit-btn, .reset-btn{
+			width: 100px;
+			padding: 10px;
+			margin: 10px 10px 0 0;
+			color: white;
+			border: none;
+			cursor: pointer;
+			border: none;
+			border-radius: 10px;
+		}
+
+		@media(min-width: 768px){
+			.main{
+				width: 500px;
+				margin: 0 auto;
+				padding: 120px 0;
+			}
+		}
+
+
+		@media(min-width: 1000px){
+			.main{
+				width: 100%;
+				display: grid;
+				grid-gap: 30px;
+				padding: 150px 0;
+				grid-template-areas:"map-wrapper address-wrapper form-wrapper"
+			}
+
+			.main section{
+				margin: 0;
+			}
+
+			.map-wrapper{grid-area: map-wrapper;}
+			.address-wrapper{grid-area: address-wrapper;}
+			.form-wrapper{grid-area: form-wrapper;}
+
+		}
+
+		@media(min-width: 1200px){
+			.main{
+				width: 1000px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+			<div class="mobile-header">
+				<span class="nav-menu">
+					<i class="fa fa-bars" onclick="opennav()" title="Menu"></i>
+					<a href="index.html"><img src="Media/logo.png" width="50px" class="logo"></a>
+				</span>
+				<span>
+					<a href="#" title="Register here" class="action-btn">
+						<i class="fa fa-phone"></i> : 0243619089
+					</a>
+				</span>
+			</div>
+
+	<!--Mobile Nav-->
+			<nav id="Nav" class="mobile-nav" onclick="closelogin()">
+				<span class="close-btn" onclick="closenav()">&times;</span>
+				<ul>
+					<li><a href="index.html" onclick="closenav()" class="active">Home</a></li>
+					<li><a href="index.html#about" onclick="closenav()">About</a></li>
+					<li><a href="index.html#products" onclick="closenav()">Products</a></li>
+					<li><a href="index.html#services" onclick="closenav()">Services</a></li>
+					<li><a href="#" onclick="closenav()">Contact</a></li>
+				</ul>
+			</nav>
+
+
+	<!--Desktop header-->
+		<div class="desktop-header">
+			<header>
+				<nav>
+					<span class="logo"><a href="index.html"><img src="Media/logo.png" width="50px"></a></span>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#products">Products</a></li>
+						<li><a href="index.html#services">Services</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="quick-links-wrapper">
+					<form class="search-wrapper" id="search-wrapper">
+						<input type="" name="search-form" placeholder="Search here..." class="search-form" id="search-form" onclick="opensearch()">
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+					</form>
+					<span class="action-btn-wrapper">
+						<a href="#" title="Register here" class="action-btn">
+							<i class="fa fa-phone"></i> : 0243619089
+						</a>
+					</span>
+					
+				</div>
+			</header>
+		</div>
+
+		<span class="search-icon" onclick="openmsearch()" id="search-icon" title="Search"><i class="fa fa-search"></i></span>
+					<form class="mobile-search" id="m-search-form">
+						<input type="" name="search-form" placeholder="Search here..." class="search-form" >
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+					</form>
+
+
+		<div class="main" onclick="closenav()">
+			<section class="map-wrapper">
+				<a href="https://www.google.com/maps/place/Nkoranza+Technical+Institute/@7.5465623,-1.7094077,1964a,35y,355.5h,37.86t/data=!3m1!1e3!4m12!1m6!3m5!1s0xfda65ab65a3d5a1:0xd062bea824b2cf9e!2sNkoranza+Technical+Institute!8m2!3d7.5598804!4d-1.7133056!3m4!1s0xfda65ab65a3d5a1:0xd062bea824b2cf9e!8m2!3d7.5598804!4d-1.7133056" target="_blank">
+				<img src="Media/map.png">
+				</a>
+				<em>Click on the image to locate us on google-map</em>
+			</section>
+
+			<section class="address-wrapper">
+				<h2><i class="fa fa-phone"> </i> CONTACT</h2>
+				<p><b>Line 1:</b>  +233 (0) 243619089</p>
+				<p><b>Line 2:</b>   +233 (0) 245495617</p>
+				<p><b>E-mail: </b> kuswebsystems@gmail.com</p>
+				<br>
+				<h2><i class="fa fa-map-marker"></i> LOCATION</h2>
+				<p>Opposite ANGUTECH</p>
+				<address>
+					<p>Ghana-West Africa<p> 
+					<p>Nkoranza South</p> 
+					<p>Bono East</p>
+				</address>
+			</section>
+
+			<section class="form-wrapper">
+						<form>
+							<input type="text" placeholder="Name" name="username" required="" class="text-box">
+							<input type="tel" placeholder="Phone" name="userphone" required="" class="text-box" >
+							<input type="email" placeholder="E-mail" name="useremail" required="" class="text-box">
+							<textarea placeholder="Message" required=""></textarea>
+							<input type="submit" value="Send" name="submit-btn" class="submit-btn">
+							<input type="reset" value="Clear" name="reset-btn" class="reset-btn">
+						</form>
+			</section>
+		</div>
+
+		<span class="scroll-top-icon" id="scrolltop" onclick="scrolltop()" title="Scroll Top">
+			<i class="fa fa-arrow-up"></i>
+		</span>
+
+		<footer onclick="closenav()">
+			<div class="footer-content">
+				<p>&copy Kusweb Systems 2020. All Rights Reserved</p>
+				<hr>
+				<p>
+					<a href="" class="f-icon"><i class="fa fa-instagram"></i></a>
+					<a href="" class="f-icon"><i class="fa fa-facebook"></i></a>
+					<a href="" class="f-icon"><i class="fa fa-twitter"></i></a>
+					<a href="" class="f-icon"><i class="fa fa-whatsapp"></i></a>
+				</p>
+
+				<div class="sub-form">
+					<form>
+						<input type="email" placeholder="Get update in your e-mail" name="news-letter-form" class="news-letter-form">
+						<input type="submit" value="Subscribe Now!" name="news-letter-btn" class="news-letter-btn">
+					</form>
+				</div>
+			</div>
+		</footer>
+
+<script type="text/javascript">
+	mybutton= document.getElementById("scrolltop");
+
+		function scrolltop() {
+			document.body.scrollTop= 0;
+		}
+
+		function scrolltop() {
+			document.documentElement.scrollTop= 0;
+		}
+</script>
+
+</body>
+</html>
